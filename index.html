@@ -118,7 +118,219 @@
   </style>
 </head>
 <body>
-  <!-- Conteúdo do body foi mantido exatamente igual ao fornecido -->
-  ... (restante do HTML do usuário aqui) ...
+
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>ALC Digital Tech</span>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#apps">Apps</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="backdrop"></div>
+      <div class="container hero-inner">
+        <div>
+          <div class="kicker">Tecnologia que simplifica</div>
+          <h1>Apps que <span style="color:var(--accent-2)">facilitam</span> a vida — com entretenimento e utilidade pública</h1>
+          <p class="lead">A ALC Digital Tech cria experiências simples, bonitas e acessíveis. Nossa missão é levar tecnologia prática para o dia a dia — do aprendizado ao lazer.</p>
+          <div class="cta">
+            <a class="btn primary" href="#apps">Ver nossos apps</a>
+            <a class="btn ghost" href="/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+            <a class="btn ghost" href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy (EN)</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <span class="chip">ALC • 2025</span>
+          <div class="orbit"></div>
+          <!-- Ilustração simples “futurista” em SVG -->
+          <svg viewBox="0 0 600 340" width="100%" height="100%" role="img" aria-label="Arte futurista">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#7c5cff"/>
+                <stop offset="1" stop-color="#00e0b8"/>
+              </linearGradient>
+            </defs>
+            <g opacity=".9">
+              <rect x="60" y="80" rx="20" ry="20" width="220" height="140" fill="url(#g1)" opacity=".35"/>
+              <circle cx="420" cy="140" r="70" fill="url(#g1)" opacity=".25"/>
+              <rect x="320" y="200" rx="16" ry="16" width="200" height="90" fill="url(#g1)" opacity=".22"/>
+              <rect x="100" y="240" rx="14" ry="14" width="160" height="50" fill="url(#g1)" opacity=".18"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE: Missão e Visão -->
+    <section id="sobre">
+      <div class="container">
+        <h2 style="margin-bottom:14px;">Sobre a ALC Digital Tech</h2>
+        <p class="muted" style="max-width:780px">Somos uma estúdio de apps focado em **entretenimento** e **utilidade pública**. Criamos produtos simples, com visual caprichado e performance estável — para qualquer pessoa, em qualquer lugar.</p>
+        <div class="cards" style="margin-top:18px;">
+          <div class="card">
+            <h3>Missão</h3>
+            <p class="muted">Facilitar a vida das pessoas com tecnologia acessível e divertida, promovendo aprendizado e cultura através de experiências móveis.</p>
+          </div>
+          <div class="card">
+            <h3>Visão</h3>
+            <p class="muted">Ser referência em apps criativos no Brasil, unindo design, performance e utilidade — com um catálogo de 10+ apps até o próximo ano.</p>
+          </div>
+          <div class="card">
+            <h3>Valores</h3>
+            <p class="muted">Simplicidade, respeito ao usuário, privacidade, qualidade visual e melhoria contínua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPS -->
+    <section id="apps">
+      <div class="container">
+        <h2 style="margin-bottom:14px;">Nossos Apps</h2>
+        <p class="muted" style="margin-bottom:18px">Toque em “Play Store” para ver os detalhes e instalar.</p>
+
+        <div class="apps" id="apps-grid">
+          <!-- App 1: Forca Nordestina (exemplo) -->
+          <article class="app" data-bundle="br.com.alcdigitaltech.forcanordestina">
+            <div class="cover">
+              <!-- Troque a imagem pelo seu banner 16:9 -->
+              <img src="/assets/forca-nordestina-banner.png" alt="Forca Nordestina banner" />
+            </div>
+            <div class="body">
+              <h3>Forca Nordestina</h3>
+              <p class="muted">Jogo de palavras inspirado na cultura do Nordeste. Aprenda se divertindo!</p>
+              <div class="tagrow">
+                <span class="tag">Jogos</span>
+                <span class="tag">Palavras</span>
+                <span class="tag">Educativo</span>
+              </div>
+              <div class="actions">
+                <a class="btn store" target="_blank" rel="noopener"
+                   href="https://play.google.com/store/apps/details?id=br.com.alcdigitaltech.forcanordestina">Ver na Play Store</a>
+                <a class="btn secondary" href="#contato">Suporte</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- App 2: Exemplo para futuro -->
+          <article class="app" data-bundle="br.com.alcdigitaltech.app2">
+            <div class="cover">
+              <img src="/assets/app2-banner.png" alt="App 2 banner (em breve)" />
+            </div>
+            <div class="body">
+              <h3>App 2 (em breve)</h3>
+              <p class="muted">Utilidade pública com foco em praticidade no dia a dia.</p>
+              <div class="tagrow">
+                <span class="tag">Utilidade</span>
+                <span class="tag">Offline</span>
+              </div>
+              <div class="actions">
+                <a class="btn store" target="_blank" rel="noopener"
+                   href="https://play.google.com/store/apps/details?id=br.com.alcdigitaltech.app2">Ver na Play Store</a>
+                <a class="btn secondary" href="#contato">Suporte</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- App 3: Exemplo -->
+          <article class="app" data-bundle="br.com.alcdigitaltech.app3">
+            <div class="cover">
+              <img src="/assets/app3-banner.png" alt="App 3 banner (em breve)" />
+            </div>
+            <div class="body">
+              <h3>App 3 (em breve)</h3>
+              <p class="muted">Entretenimento com foco em leveza e performance.</p>
+              <div class="tagrow">
+                <span class="tag">Entretenimento</span>
+                <span class="tag">Leve</span>
+              </div>
+              <div class="actions">
+                <a class="btn store" target="_blank" rel="noopener"
+                   href="https://play.google.com/store/apps/details?id=br.com.alcdigitaltech.app3">Ver na Play Store</a>
+                <a class="btn secondary" href="#contato">Suporte</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container contact">
+        <div class="panel">
+          <h2>Fale com a gente</h2>
+          <p class="muted">Tem dúvidas, sugestões ou quer parcerias? Escreva pra nós:</p>
+          <p style="margin:10px 0 6px;">
+            📧 <a href="mailto:alcdigital@gmail.com">alcdigital@gmail.com</a>
+          </p>
+          <p style="margin:6px 0;">
+            🌐 <a href="https://alcdigitaltech.com.br" target="_blank" rel="noopener">alcdigitaltech.com.br</a>
+          </p>
+          <p style="margin:6px 0;">
+            📄 <a href="/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade (PT)</a> •
+            <a href="/privacy-policy" target="_blank" rel="noopener">Privacy Policy (EN)</a>
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Como adicionar novos apps à página</h3>
+          <ol class="muted" style="line-height:1.6;">
+            <li>Duplique um bloco <strong>&lt;article class="app"&gt; ... &lt;/article&gt;</strong> em <strong>#apps-grid</strong>.</li>
+            <li>Troque <em>título</em>, <em>descrição</em>, <em>tags</em> e o <strong>href</strong> do botão para a URL da Play Store (id do pacote).</li>
+            <li>Atualize a imagem do banner (16:9) em <code>/assets/&lt;nome&gt;.png</code>.</li>
+          </ol>
+          <p class="muted">Quer automação para puxar dados da Play Store? Dá para fazer num backend depois. Por enquanto, mantenha manual para estabilidade.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+      <span>© <span id="y"></span> ALC Digital Tech. Todos os direitos reservados.</span>
+      <span class="muted">Feito com ♥ no Brasil.</span>
+    </div>
+  </footer>
+
+  <!-- JS leve -->
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JSON-LD (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ALC Digital Tech",
+    "url": "https://alcdigitaltech.com.br",
+    "logo": "https://alcdigitaltech.com.br/assets/og-cover.png",
+    "sameAs": []
+  }
+  </script>
+
+  <!-- Exemplo de schema MobileApplication para o Forca Nordestina -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"MobileApplication",
+    "name":"Forca Nordestina",
+    "operatingSystem":"Android",
+    "applicationCategory":"GameApplication",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "ratingCount": "1" },
+    "offers": { "@type":"Offer", "price":"0", "priceCurrency":"BRL" },
+    "url":"https://play.google.com/store/apps/details?id=br.com.alcdigitaltech.forcanordestina"
+  }
+  </script>
 </body>
 </html>
