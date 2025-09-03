@@ -3,122 +3,177 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ALC Digital Tech — Apps que facilitam sua vida</title>
-  <meta name="description" content="ALC Digital Tech: apps de entretenimento e utilidade pública, feitos para facilitar a vida das pessoas." />
+  <title>Política de Privacidade — ALC Digital Tech</title>
+  <meta name="description" content="Política de Privacidade da ALC Digital Tech para aplicativos Android." />
 
-  <!-- SEO básico -->
-  <link rel="canonical" href="https://alcdigitaltech.com.br/" />
-  <meta property="og:title" content="ALC Digital Tech — Apps que facilitam sua vida" />
-  <meta property="og:description" content="Entretenimento e utilidade pública com tecnologia simples e acessível." />
+  <link rel="canonical" href="https://alcdigitaltech.com.br/politica-de-privacidade" />
+  <meta property="og:title" content="Política de Privacidade — ALC Digital Tech" />
+  <meta property="og:description" content="Como coletamos, usamos e protegemos seus dados nos apps da ALC Digital Tech." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://alcdigitaltech.com.br/" />
+  <meta property="og:url" content="https://alcdigitaltech.com.br/politica-de-privacidade" />
   <meta property="og:image" content="https://alcdigitaltech.com.br/assets/og-cover.png" />
 
-  <!-- Fonte e reset leve -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #0a0b10;
-      --card: rgba(255,255,255,0.06);
-      --accent: #7c5cff; /* violeta futurista */
-      --accent-2: #00e0b8; /* ciano/verde neon */
-      --text: #e8eaf0;
-      --muted: #a9afc3;
-      --shadow: 0 20px 50px rgba(0,0,0,.45);
-      --radius: 18px;
+    :root{
+      --bg:#0a0b10; --card:rgba(255,255,255,.06); --accent:#7c5cff; --accent-2:#00e0b8;
+      --text:#e8eaf0; --muted:#a9afc3; --shadow:0 20px 50px rgba(0,0,0,.45); --radius:18px;
     }
-    * { box-sizing: border-box; }
-    html,body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
-    a { color: inherit; text-decoration: none; }
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
 
     /* Header */
-    header { position: sticky; top:0; z-index: 40; background: rgba(10,11,16,.7); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,.06); }
-    .nav { display:flex; align-items:center; justify-content:space-between; height:64px; }
-    .brand { display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px; }
-    .brand .logo {
-      width:36px; height:36px; border-radius:10px;
-      background: conic-gradient(from 210deg, var(--accent), var(--accent-2), #4dd0ff, var(--accent));
-      box-shadow: 0 8px 24px rgba(124,92,255,.35);
-    }
-    nav a { margin-left: 18px; color: var(--muted); font-weight:600; }
-    nav a:hover { color: var(--text); }
+    header{position:sticky;top:0;z-index:40;background:rgba(10,11,16,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .brand .logo{width:36px;height:36px;border-radius:10px;background:conic-gradient(from 210deg,var(--accent),var(--accent-2),#4dd0ff,var(--accent));box-shadow:0 8px 24px rgba(124,92,255,.35)}
+    nav a{margin-left:18px;color:var(--muted);font-weight:600}
+    nav a:hover{color:var(--text)}
+    .active{color:#fff !important}
 
     /* Hero */
-    .hero { position: relative; overflow: hidden; }
-    .hero .backdrop {
-      position:absolute; inset: -120px -120px auto -120px; height: 520px; z-index:-1;
+    .hero{position:relative;overflow:hidden}
+    .hero .backdrop{
+      position:absolute;inset:-120px -120px auto -120px;height:320px;z-index:-1;
       background:
-        radial-gradient(600px 300px at 10% 20%, rgba(124,92,255,.25), transparent 60%),
-        radial-gradient(500px 300px at 90% 10%, rgba(0,224,184,.18), transparent 60%),
-        radial-gradient(400px 260px at 60% 80%, rgba(77,208,255,.14), transparent 60%);
-      filter: saturate(110%);
+        radial-gradient(560px 260px at 10% 20%, rgba(124,92,255,.25), transparent 60%),
+        radial-gradient(500px 260px at 90% 10%, rgba(0,224,184,.18), transparent 60%);
     }
-    .hero-inner { padding: 72px 0 36px; display:grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: center; }
-    .kicker { color: var(--accent-2); font-weight:800; letter-spacing:.12em; text-transform:uppercase; font-size: .78rem; }
-    h1 { font-size: clamp(28px, 4.2vw, 48px); line-height: 1.08; margin: 10px 0 16px; }
-    .lead { color: var(--muted); font-size: clamp(14px, 1.9vw, 18px); }
-    .cta { display:flex; gap:12px; margin-top: 22px; flex-wrap: wrap; }
-    .btn {
-      padding: 12px 16px; border-radius: 12px; font-weight: 700; display:inline-flex; align-items:center; gap:10px;
-      border: 1px solid rgba(255,255,255,.12); background: linear-gradient(180deg, rgba(124,92,255,.18), rgba(124,92,255,.08));
-      box-shadow: var(--shadow);
-    }
-    .btn.primary { background: linear-gradient(180deg, var(--accent), #5d3dff); border-color: transparent; }
-    .btn.primary:hover { filter: brightness(1.05); }
-    .btn.ghost:hover { border-color: rgba(255,255,255,.24); }
+    .hero-inner{padding:60px 0 24px}
+    .kicker{color:var(--accent-2);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.08;margin:10px 0 8px}
+    .lead{color:var(--muted);font-size:clamp(14px,1.8vw,18px)}
 
-    .hero-art {
-      background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius);
-      min-height: 300px; box-shadow: var(--shadow); position:relative; overflow:hidden; padding: 18px;
+    /* Content */
+    main section{padding:28px 0}
+    .paper{
+      background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);
+      padding:22px;box-shadow:var(--shadow)
     }
-    .chip { position:absolute; right:16px; top:16px; padding:6px 10px; border-radius:999px; font-size:.78rem; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); }
-    .orbit {
-      position:absolute; inset: -30% -10% -10% -30%; opacity:.22;
-      background:
-        radial-gradient(400px 160px at 20% 30%, #fff, transparent 60%),
-        radial-gradient(360px 160px at 70% 60%, #fff, transparent 60%);
-      transform: rotate(-8deg);
-    }
-
-    /* Sections */
-    section { padding: 56px 0; }
-    .cards { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
-    .card {
-      background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:18px; box-shadow: var(--shadow);
-    }
-    .card h3 { margin: 8px 0 6px; }
-    .muted { color: var(--muted); }
-
-    /* Apps grid */
-    .apps { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
-    .app { background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); display:flex; flex-direction:column; }
-    .app .cover { aspect-ratio: 16/9; background: linear-gradient(135deg, rgba(124,92,255,.28), rgba(0,224,184,.18)); display:flex; align-items:center; justify-content:center; }
-    .app .cover img { max-width: 70%; max-height: 70%; object-fit: contain; }
-    .app .body { padding:16px; display:flex; flex-direction:column; gap:8px; }
-    .tagrow { display:flex; gap:6px; flex-wrap:wrap; }
-    .tag { font-size:.72rem; padding:4px 8px; border-radius:999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); color: var(--muted); }
-    .app .actions { margin-top: 6px; display:flex; gap:8px; }
-    .btn.store { background: linear-gradient(180deg, #00b36b, #009e60); border-color: transparent; }
-    .btn.store:hover { filter: brightness(1.05); }
-    .btn.secondary { background: linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.06)); }
-
-    /* Contato */
-    .contact { display:grid; grid-template-columns: 1fr 1fr; gap:18px; }
-    .contact .panel { background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding:18px; box-shadow: var(--shadow); }
+    h2{font-size:1.2rem;margin:22px 0 8px}
+    p,li{color:var(--text);line-height:1.75}
+    .muted{color:var(--muted)}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);font-size:.78rem}
+    .toc{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:14px 0 6px}
+    .toc a{color:var(--muted)}
+    .toc a:hover{color:#fff}
 
     /* Footer */
-    footer { padding: 28px 0 40px; color: var(--muted); border-top: 1px solid rgba(255,255,255,.08); margin-top: 28px; }
+    footer{padding:28px 0 40px;color:var(--muted);border-top:1px solid rgba(255,255,255,.08);margin-top:28px}
 
-    /* Responsive */
-    @media (max-width: 980px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .cards, .apps, .contact { grid-template-columns: 1fr; }
-    }
+    @media (max-width:900px){.toc{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-  <!-- Conteúdo do body foi mantido exatamente igual ao fornecido -->
-  ... (restante do HTML do usuário aqui) ...
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>ALC Digital Tech</span>
+      </div>
+      <nav>
+        <a href="/">Sobre</a>
+        <a href="/#apps">Apps</a>
+        <a class="active" href="/politica-de-privacidade">Política (PT)</a>
+        <a href="/privacy-policy">Privacy (EN)</a>
+        <a href="/#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="backdrop"></div>
+    <div class="container hero-inner">
+      <div class="kicker">Privacidade e transparência</div>
+      <h1>Política de Privacidade</h1>
+      <p class="lead">Esta Política explica como tratamos informações nos aplicativos da <strong>ALC Digital Tech</strong>. Valorizamos sua privacidade e seguimos as políticas do Google Play.</p>
+      <p class="muted" style="margin-top:8px">
+        <span class="badge">Última atualização: 03 set 2025</span>
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="paper">
+      <nav class="toc">
+        <a href="#quem-somos">1. Quem somos</a>
+        <a href="#coleta">2. Dados coletados</a>
+        <a href="#uso">3. Como usamos</a>
+        <a href="#compartilhamento">4. Compartilhamento</a>
+        <a href="#anuncios">5. Anúncios e analytics</a>
+        <a href="#crianças">6. Público/idade</a>
+        <a href="#seguranca">7. Segurança</a>
+        <a href="#direitos">8. Seus direitos</a>
+        <a href="#retencao">9. Retenção</a>
+        <a href="#alteracoes">10. Alterações</a>
+        <a href="#contato">11. Contato</a>
+      </nav>
+
+      <h2 id="quem-somos">1. Quem somos</h2>
+      <p>Somos a <strong>ALC Digital Tech</strong> (“ALC”, “nós”). Desenvolvemos aplicativos mobile de entretenimento e utilidade pública, como o jogo <em>Forca Nordestina</em>. Site: <a href="https://alcdigitaltech.com.br" target="_blank" rel="noopener">alcdigitaltech.com.br</a>. E-mail: <a href="mailto:alcdigital@gmail.com">alcdigital@gmail.com</a>.</p>
+
+      <h2 id="coleta">2. Dados que podemos coletar</h2>
+      <p>Os nossos apps não coletam dados pessoais diretamente de você (como nome, e-mail ou telefone) para cadastro. No entanto, tecnologias de terceiros podem coletar automaticamente informações técnicas e de uso, por exemplo:</p>
+      <ul>
+        <li>Identificadores do dispositivo (ex.: Advertising ID do Google/Android);</li>
+        <li>Dados de uso e eventos de app (telas, cliques, duração da sessão, travamentos);</li>
+        <li>Informações do dispositivo e do sistema (modelo, versão do SO, idioma, país aproximado, IP);</li>
+        <li>Para anúncios, dados para limitar fraude e medir performance de campanhas.</li>
+      </ul>
+      <p>Esses dados são processados por provedores como <strong>Google AdMob</strong> e, se habilitado, <strong>Google Play Services / Firebase</strong> (Crashlytics/Analytics).</p>
+
+      <h2 id="uso">3. Finalidades de uso</h2>
+      <ul>
+        <li>Fornecer e melhorar funcionalidades do app;</li>
+        <li>Mensurar desempenho, entender erros e travamentos;</li>
+        <li>Exibir anúncios para manter o app gratuito;</li>
+        <li>Prevenir fraude, abuso e violações.</li>
+      </ul>
+
+      <h2 id="compartilhamento">4. Compartilhamento de dados</h2>
+      <p>Podemos compartilhar dados <em>não identificáveis diretamente</em> com provedores de tecnologia estritamente para as finalidades acima (por exemplo, AdMob para anúncios, Crashlytics para estabilidade). Não vendemos dados pessoais.</p>
+
+      <h2 id="anuncios">5. Anúncios, permissões e analytics</h2>
+      <ul>
+        <li><strong>AdMob (Google):</strong> exibe anúncios e usa o <em>Advertising ID</em> para personalização (se permitido) e combate a fraude. O usuário pode redefinir o ID ou limitar a personalização em <em>Configurações do Android &gt; Google &gt; Anúncios</em>.</li>
+        <li><strong>Google Play Services / Firebase:</strong> podem coletar métricas de uso e estabilidade (ex.: Crashlytics).</li>
+        <li><strong>Permissões:</strong> nossos apps solicitam apenas as permissões necessárias ao funcionamento (por exemplo, acesso à internet).</li>
+      </ul>
+      <p class="muted">Consulte também as políticas do Google: <a href="https://policies.google.com/technologies/ads?hl=pt-BR" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.</p>
+
+      <h2 id="crianças">6. Público e idade</h2>
+      <p>Nossos apps são destinados ao público <strong>a partir de 13 anos</strong>. Não direcionamos funcionalidades a crianças menores de 13 anos nem coletamos, de forma consciente, dados pessoais de crianças. Se você é responsável legal e acredita que uma criança nos forneceu dados, contate-nos para remoção.</p>
+
+      <h2 id="seguranca">7. Segurança</h2>
+      <p>Empregamos medidas de segurança proporcionais para proteger as informações processadas por nossos provedores. Ainda assim, nenhum sistema é 100% seguro e recomendamos manter seu dispositivo atualizado.</p>
+
+      <h2 id="direitos">8. Seus direitos</h2>
+      <p>Dependendo da sua jurisdição, você pode ter direitos como acesso, correção, oposição, portabilidade e exclusão de dados. Para exercer, escreva para <a href="mailto:alcdigital@gmail.com">alcdigital@gmail.com</a> informando o app e detalhes relevantes. Podemos pedir informações adicionais para verificação.</p>
+
+      <h2 id="retencao">9. Retenção</h2>
+      <p>Os dados processados por provedores (ex.: métricas e logs) são retidos pelo tempo necessário às finalidades descritas e conforme as políticas desses provedores.</p>
+
+      <h2 id="alteracoes">10. Alterações desta Política</h2>
+      <p>Podemos atualizar esta Política para refletir melhorias, requisitos legais ou mudanças nos apps. A versão vigente estará sempre disponível neste endereço, com a data de “Última atualização”.</p>
+
+      <h2 id="contato">11. Como falar com a ALC</h2>
+      <p>Se tiver dúvidas sobre privacidade ou esta Política, fale com a gente:</p>
+      <ul>
+        <li>E-mail: <a href="mailto:alcdigital@gmail.com">alcdigital@gmail.com</a></li>
+        <li>Site: <a href="https://alcdigitaltech.com.br" target="_blank" rel="noopener">alcdigitaltech.com.br</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+      <span>© <span id="y"></span> ALC Digital Tech. Todos os direitos reservados.</span>
+      <span class="muted">Feito com ♥ no Brasil.</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
