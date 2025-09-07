@@ -93,8 +93,8 @@
     /* Apps grid */
     .apps { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
     .app { background: var(--card); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); display:flex; flex-direction:column; }
-    .app .cover { aspect-ratio: 16/9; background: linear-gradient(135deg, rgba(124,92,255,.28), rgba(0,224,184,.18)); display:flex; align-items:center; justify-content:center; }
-    .app .cover img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .app .cover { width:100%; aspect-ratio: 16/9; overflow:hidden; border-radius:16px; padding:0; display:flex; align-items:center; justify-content:center; }
+    .app .cover img { width:100%; height:100%; object-fit:contain; display:block; }
     .app .body { padding:16px; display:flex; flex-direction:column; gap:8px; }
     .tagrow { display:flex; gap:6px; flex-wrap:wrap; }
     .tag { font-size:.72rem; padding:4px 8px; border-radius:999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); color: var(--muted); }
